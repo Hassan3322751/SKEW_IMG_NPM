@@ -1,0 +1,60 @@
+:root{
+  --bottom-skew-bg: #364854;
+  --bottom-skew-border: 1px solid #364854;
+  --bottom-skew-angle: skewX(-20deg);
+  --top-skew-bg: transparent;
+  --top-skew-border: 1px solid white;
+  --top-skew-angle: skewX(-20deg);
+  --img-skew-angle: skewX(0deg);
+}
+
+.skewContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    height: fit-content;
+    box-sizing: border-box;
+    margin-right: 1rem;
+  }
+  
+  .skew {
+    position: absolute;
+    border: 1px solid white;
+    top: -3.0rem;
+    left: 4.0rem;
+    width: 32.3rem;
+    height: 22.1rem;
+    background: transparent;
+    transform: skewX(-20deg);
+  }
+  
+  .skewImg {
+    width: 60rem;
+    transform: var(--img-skew-angle);
+    background: none;
+    z-index: 0;
+  }
+  
+  .skew1 {
+    position: absolute;
+    bottom: -2.6rem;
+    right: 4.0rem;
+    width: 32.3rem;
+    height: 22.1rem;
+    border: var(--bottom-skew-border);
+    background: var(--bottom-skew-bg);
+    transform: var(--bottom-skew-angle);
+    z-index: -1;
+  }
+
+  @media (max-width: 480px) {
+    .skewImg {
+      width: 53rem;
+    }
+  }
+  @media (max-width: 320px) {
+    .skewImg {
+      width: 45rem;
+    }
+  }
