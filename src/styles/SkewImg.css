@@ -20,13 +20,13 @@
   
   .skew {
     position: absolute;
-    border: 1px solid white;
+    border: var(--top-skew-border);
     top: -3.0rem;
     left: 4.0rem;
     width: 32.3rem;
     height: 22.1rem;
-    background: transparent;
-    transform: skewX(-20deg);
+    background: var(--top-skew-bg);
+    transform: var(--top-skew-angle);
   }
   
   .skewImg {

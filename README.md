@@ -11,7 +11,7 @@ npm install hr-skew-img
 ```jsx
 import SkewImg from 'hr-skew-img';
 import 'hr-skew-img/dist/index.cjs.css';
-//--------   OR    ||
+--------OR
 import 'hr-skew-img/dist/index.esm.css';
 
 const App = () => (
@@ -31,7 +31,7 @@ const App = () => (
 ## Customization
 Add these CSS variables to your root CSS and import that CSS file in your component where you are going to use SkewImg:
 ```css
-//Use !important with each var e.g. --skew-angle: 15deg !important
+#Use !important with each var e.g. --skew-angle: 15deg !important
 
 :root {
   --bottom-skew-bg: #364854 !important;
@@ -43,6 +43,12 @@ Add these CSS variables to your root CSS and import that CSS file in your compon
   --img-skew-angle: skewX(0deg) !important;
 }
 
-//Above given are some variables can be changed modified as your need
+#Above_given are some variables can be changed modified as your need
   1. Skew background can be transparent, image or color etc.
 ```
+## GIF Preview
+Here example GIF from Cloudinary how it will look like in your awesome project:
+
+| GIF |
+|------|
+| ![GIF 1](https://res.cloudinary.com/dmprsl1mx/image/upload/f_auto,q_auto/syzcllcx4u0ytd9u5ffn) |
